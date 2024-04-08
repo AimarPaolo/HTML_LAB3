@@ -23,10 +23,10 @@
       <h2>Men&ugrave;</h2>
 
       <ul>
-        <li><a href="lab3_1_home.html">Home</a></li>
-        <li><a href="lab3_1_voti.html">Voti</a></li>   
-        <li><a href="lab3_1_cv.html">Curriculum vitae</a></li>
-        <li><a href="https://www.polito.it/">Polito.it</a></li>
+        <li><a tabindex="1" href="lab3_1_home.html">Home</a></li>
+        <li><a tabindex="2" href="lab3_1_voti.html">Voti</a></li>   
+        <li><a tabindex="3" href="lab3_1_cv.html">Curriculum vitae</a></li>
+        <li><a tabindex="4" href="https://www.polito.it/">Polito.it</a></li>
       </ul>
     </nav>
 
@@ -34,8 +34,8 @@
       <h2>Chi sono</h2>
 
       <p>Il mio nome &egrave; Paolo Rossi,
- vivo a <a href= "https://it.wikipedia.org/wiki/Torino">Torino</a> dal 2001
- e sono nato a <a href="https://it.wikipedia.org/wiki/Roma"> Roma </a>
+ vivo a <a tabindex="5" id= "url" href= "https://it.wikipedia.org/wiki/Torino">Torino</a> dal 2001
+ e sono nato a <a tabindex="6" id="url" href="https://it.wikipedia.org/wiki/Roma"> Roma </a>
  il <time datetime="1966-02-23"> 23/2/1966</time>.
       </p>
 
@@ -46,11 +46,14 @@
      
 
     <footer id="myfooter">
-      <a href="https://www.facebook.com" target="_blank"><img src="./img/facebook-icon.png"  alt="Logo di Facebook"></a>
-	  <a href="https://www.linkedin.com" target="_blank"><img src="./img/linkedin-icon.png"  alt="Logo di Linkedin" ></a>
-	  <a href="https://www.twitter.com" target="_blank"><img src="./img/twitter-icon.png"  alt="Logo di Twitter"></a>
+      <a tabindex="7" href="https://www.facebook.com" target="_blank"><img src="./img/facebook-icon.png"  alt="Logo di Facebook"></a>
+	  <a tabindex="8" href="https://www.linkedin.com" target="_blank"><img src="./img/linkedin-icon.png"  alt="Logo di Linkedin" ></a>
+	  <a tabindex="9" href="https://www.twitter.com" target="_blank"><img src="./img/twitter-icon.png"  alt="Logo di Twitter"></a> 
+    <!---se qui ad esempio non inserisco tabindex 9 mi salta direttamente all'altro e poi questa me la inserisce in coda (posso sempre
+      raggiungerla con il tasto tab ma sceglie lui l'ordine
+      --->
       <p>Autore: Paolo Rossi</p>
-      <address>e-mail:    <a href="mailto:paolo.rossi@studenti.polito.it">paolo.rossi@studenti.polito.it</a></address>
+      <address>e-mail:    <a tabindex="10" href="mailto:paolo.rossi@studenti.polito.it">paolo.rossi@studenti.polito.it</a></address>
       <a href="https://validator.w3.org">
           <img src="./img/HTML5_Logo_512.png" alt="Valid HTML 5"  >
         </a> 

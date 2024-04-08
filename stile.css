@@ -4,12 +4,14 @@ body { background: url(img/background.png) repeat; background-color: black; font
 
 header{display: block; border-color: red; border-style: groove; clear:both}
 nav{float:left; width: 50%; min-width: 30em;}
-main{float:right; display: inline; width:50%; min-width: 30em;}
+main{float:right; display: inline; width:50%; min-width: 30em; text-align: center;}
 
 tr.votobasso { color: pink; text-align: center; color: #222;}
 tr.votoalto { color: lightgreen; text-align: center }
 
-@media print{nav{display: none;} main{float:none}}
+@media print{body{background-color: black !important; font-family: serif; border-top-color: black !important;} nav{display: none;} main{float:none} a:link{text-decoration: underline !important;} #url::after{content: " ("attr(href)") ";}}
+
+@media screen{body{font-size: 1em;}}
 
 caption { text-align: left; visibility: hidden; }
 th { font-size: 90% }
@@ -33,6 +35,7 @@ footer{clear: both} /* non inserisce float nè a sinistra nè a destra*/
 #myfooter { font-family: "Times New Roman", Georgia, Serif; font-style: italic; font-size: 80%; border-top-style: solid; border-top-width: 1px; border-top-color: blue; padding-top: 10px; border-width: 3px;}
 
 a:link { color: darkorange; text-decoration: none} 
+a:focus{color:cornflowerblue} /*focus serve quando utilizzi il tasto tab e ti fa cambiare il colore quando si passa un a*/
 a:visited { color: darkorange; text-decoration: none} 
 a:hover { color: white; background: darkorange; text-decoration: none; visibility: hidden;} 
 a:active { color: white; background: red; text-decoration: none} 
